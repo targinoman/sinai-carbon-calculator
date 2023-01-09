@@ -1,0 +1,49 @@
+{
+    "pplInHousehold": "2",
+    "zipcode": "00002",
+    "homeEnergy": {
+      "primaryHeatingSource": "Natural Gas",
+      "naturalGasTextInput": "105.20",
+      "electricityTextInput": "117.65",
+      "fuelTextInput": "180.85",
+      "propaneTextInput": "314.00",
+      "energyAC": "2",
+      "energyHeat": "3",
+      "lightsToReplace": "8",
+      "pwrMgmtSelect": "Will Do",
+      "increaseGreenInput": "20",
+      "coldWaterSelect": "Will Do",
+      "loadsPerWeek": "3",
+      "AirDrySelect": "Will Do",
+      "percentageAirDrySelect": "50% of my Laundry",
+      "fridgeSelect": "Will Do",
+      "furnaceSelect": "Will Do",
+      "windowSelect": "Will Do"
+    },
+    "transportation": {
+      "numVehiclesInput": "2",
+      "maintCurrentSelect": "Do Not Do",
+      "vehicle1Miles": "14.263",
+      "vehicle1Select": "Per Year",
+    "vehicle1GasMileage": "24.6",
+      "vehicle2Miles": "35.7",
+      "vehicle2Select": "Per Week",
+      "vehicle2GasMileage": "18.3",
+      "maintReduceSelect": "Will Do",
+      "reduceMilesInput1": "1.000",
+      "reduceMilesSelect1": "Per Week",
+      "replaceVehicleInput1": "28.5",
+      "reduceMilesInput2": "10",
+      "reduceMilesSelect2": "Per Week",
+      "replaceVehicleInput2": "37.3"
+    },
+    "waste": {
+      "currentRecycling": [
+        "aluminum",
+        "plastic"
+      ],
+      "newRecycling": [
+        "glass"
+      ]
+    }
+  }
