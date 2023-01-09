@@ -1,0 +1,21 @@
+{
+  "name": "sinaicarboncalculator",
+  "version": "1.0.0",
+  "description": "Technical Assignment for Sinai Technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "nodejs",
+    "sinai",
+    "carbon",
+    "footprint"
+  ],
+  "author": "Rafael Targino",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}
