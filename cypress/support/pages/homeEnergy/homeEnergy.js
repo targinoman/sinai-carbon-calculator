@@ -1,6 +1,6 @@
 class HomeEnergy {
     fillHomeEnergyForm(data) {
-        cy.get('#primaryHeatingSource').select(data.homeEnergy.primaryHeatingSource, { timeout: 5000 })
+        cy.get('#primaryHeatingSource').select(data.homeEnergy.primaryHeatingSource, { timeout: 30000 })
         cy.get('#naturalGasTextInput').type(data.homeEnergy.naturalGasTextInput)
         cy.get('#electricityTextInput').type(data.homeEnergy.electricityTextInput)
         cy.get('#fuelTextInput').type(data.homeEnergy.fuelTextInput)
@@ -17,6 +17,22 @@ class HomeEnergy {
         cy.selectOption('#fridgeSelect', data.homeEnergy.fridgeSelect)
         cy.selectOption('#furnaceSelect', data.homeEnergy.furnaceSelect)
         cy.selectOption('#windowSelect', data.homeEnergy.windowSelect)
+    }
+
+    fillField(locator, bill) {
+        cy.get(locator).type(bill)
+    }
+
+    validatePoundsYear(source, pounds) {
+        cy.get(`.${source} span`).should('contains.text', pounds)
+    }
+
+    validateDollarSavings(locator, dollarSavings){
+        cy.get(locator).should('contains.text', dollarSavings)
+    }
+
+    validateReductions(locator, co2Eeductions){
+        cy.get(locator).should('contains.text', co2Eeductions)
     }
 }
 
