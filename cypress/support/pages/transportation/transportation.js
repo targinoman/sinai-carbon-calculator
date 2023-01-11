@@ -14,6 +14,23 @@ class TransportationPage {
         cy.selectOption('#reduceMilesSelect2', data.transportation.reduceMilesSelect2)
         cy.get('#replaceVehicleInput2').type(data.transportation.replaceVehicleInput2)
     }
+
+    fillVehicleInfo(vehicleName, miles, mileage){
+        cy.get(`#${vehicleName}Miles`).type(miles)
+        cy.get(`#${vehicleName}GasMileage`).type(mileage)
+    }
+
+    validateVehicleEmissions(vehicleName, pounds) {
+        cy.get(`.${vehicleName}Co2`).should('contains.text', pounds)
+    }
+
+    validateDollarSavings(locator, dollarSavings){
+        cy.get(locator).should('contains.text', dollarSavings)
+    }
+
+    validateReductions(locator, co2Reductions){
+        cy.get(locator).should('contains.text', co2Reductions)
+    }
 }
 
 export default new TransportationPage()

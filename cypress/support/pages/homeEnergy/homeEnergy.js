@@ -31,8 +31,8 @@ class HomeEnergy {
         cy.get(locator).should('contains.text', dollarSavings)
     }
 
-    validateReductions(locator, co2Eeductions){
-        cy.get(locator).should('contains.text', co2Eeductions)
+    validateReductions(locator, co2Reductions){
+        cy.get(locator).should('contains.text', co2Reductions)
     }
 }
 

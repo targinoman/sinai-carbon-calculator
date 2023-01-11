@@ -18,6 +18,7 @@ describe('Validate home energy calculations', function () {
         before(function () {
             cy.visit('/')
             startPage.fillHouseholdData('2', '00002')
+            cy.isLoaded('Home Energy')
         })
 
         it('should display the correct estimations of pounds of CO2/year', function () {
